@@ -18,6 +18,6 @@ OpenFaaS images are stored in a Docker registry or the Docker Hub, we can set an
 
 Edit ```~/.bashrc``` or ```~/.bash_profile``` - create the file if it doesn't exist.
 
-Now add the following - changing the URL as per the one you saw above.
+Now add the following - changing the URL as per the one you saw above (e.g. "wvanheemstra").
 
 ```export OPENFAAS_PREFIX="" # Populate with your Docker Hub username```
