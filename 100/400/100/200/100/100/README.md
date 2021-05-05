@@ -4,7 +4,7 @@ If you have Docker on your computer, then you can use ```k3d``` from Rancher Lab
 
 ## 100 - Install k3d
 
-See [Install k3d](https://github.com/rancher/k3d)
+See [Install k3d](https://github.com/rancher/k3d) and [k3s-dind - Headstart](https://github.com/vanHeemstraSystems/k3s-dind-headstart)
 
 ## 200 - Start a cluster
 
