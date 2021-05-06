@@ -4,6 +4,10 @@
 
 ```$ kubectl rollout status -n openfaas deploy/gateway```
 
+You may see this:
+
+```Error from server (NotFound): deployments.apps "gateway" not found```
+
 - If you're using your laptop, a VM, or any other kind of Kubernetes distribution run the following instead:
 
 ```$ kubectl port-forward svc/gateway -n openfaas 8080:8080```
