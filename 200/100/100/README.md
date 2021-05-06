@@ -48,8 +48,3 @@ Error: Kubernetes cluster unreachable: Get "http://localhost:8080/version?timeou
 ```$ arkade install openfaas --load-balancer```
 
 ***Note***: the --load-balancer flag has a default of false, so by passing the flag, the installation will request one from your cloud provider.
-
-Or install with helm (advanced).
-
-If you prefer, you can install OpenFaaS using the [helm chart](https://github.com/openfaas/faas-netes/blob/master/chart/openfaas/README.md) instructions.
-
