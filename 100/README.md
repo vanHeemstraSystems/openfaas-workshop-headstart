@@ -1,5 +1,7 @@
 # 100 - Requirements
 
+***WARNING***: Make sure to get the LARGE size of a Linux server when trying the code, as it requires a lot of CPU power.
+
 ## 100 - Docker
 See [README.md](./100/README.md)
 
