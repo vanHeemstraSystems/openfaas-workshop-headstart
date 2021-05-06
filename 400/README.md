@@ -2,6 +2,6 @@
 
 Edit ```~/.bashrc``` or ```~/.bash_profile``` - create the file if it doesn't exist.
 
-Now add the following - changing the URL as per the one you saw above.
+Now add the following - changing the URL as per the one you saw in previous section.
 
 ```export OPENFAAS_URL="" # populate as above```
