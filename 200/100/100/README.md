@@ -22,40 +22,24 @@ You will see something like this:
 
 ```
 Using Kubeconfig: ./k3sconfig
+[Warning] unable to create secret basic-auth, may already exist: error: failed to create secret secrets "basic-auth" already exists
 Client: x86_64, Linux
-2021/05/06 13:34:54 User dir established as: /home/cloud_user/.arkade/
-https://get.helm.sh/helm-v3.5.2-linux-amd64.tar.gz
-/tmp/linux-amd64 linux-amd64/
-/tmp/helm linux-amd64/helm
-/tmp/LICENSE linux-amd64/LICENSE
-/tmp/README.md linux-amd64/README.md
-2021/05/06 13:34:55 extracted tarball into /tmp: 3 files, 0 dirs (482.371931ms)
-Downloaded to:  /home/cloud_user/.arkade/bin/helm helm
-WARNING: Kubernetes configuration file is group-readable. This is insecure. Location: ./k3sconfig
-WARNING: Kubernetes configuration file is world-readable. This is insecure. Location: ./k3sconfig
-"openfaas" has been added to your repositories
-WARNING: Kubernetes configuration file is group-readable. This is insecure. Location: ./k3sconfig
-WARNING: Kubernetes configuration file is world-readable. This is insecure. Location: ./k3sconfig
+2021/05/06 13:46:20 User dir established as: /home/cloud_user/.arkade/
+"openfaas" already exists with the same configuration, skipping
 
-WARNING: Kubernetes configuration file is group-readable. This is insecure. Location: ./k3sconfig
-WARNING: Kubernetes configuration file is world-readable. This is insecure. Location: ./k3sconfig
 Hang tight while we grab the latest from your chart repositories...
 ...Successfully got an update from the "openfaas" chart repository
 Update Complete. ⎈Happy Helming!⎈
-WARNING: Kubernetes configuration file is group-readable. This is insecure. Location: ./k3sconfig
-WARNING: Kubernetes configuration file is world-readable. This is insecure. Location: ./k3sconfig
 
-WARNING: Kubernetes configuration file is group-readable. This is insecure. Location: ./k3sconfig
-WARNING: Kubernetes configuration file is world-readable. This is insecure. Location: ./k3sconfig
 VALUES values.yaml
-Command: /home/cloud_user/.arkade/bin/helm [upgrade --install openfaas openfaas/openfaas --namespace openfaas --values /tmp/charts/openfaas/values.yaml --set queueWorker.replicas=1 --set gateway.directFunctions=false --set openfaasImagePullPolicy=IfNotPresent --set faasnetes.imagePullPolicy=Always --set basicAuthPlugin.replicas=1 --set gateway.replicas=1 --set ingressOperator.create=false --set queueWorker.maxInflight=1 --set basic_auth=true --set clusterRole=false --set operator.create=false --set serviceType=NodePort]
-W0506 13:34:56.497069    3634 loader.go:223] Config not found: ./k3sconfig
-W0506 13:34:56.497334    3634 loader.go:223] Config not found: ./k3sconfig
-W0506 13:34:56.497373    3634 loader.go:223] Config not found: ./k3sconfig
+Command: /home/cloud_user/.arkade/bin/helm [upgrade --install openfaas openfaas/openfaas --namespace openfaas --values /tmp/charts/openfaas/values.yaml --set clusterRole=false --set openfaasImagePullPolicy=IfNotPresent --set queueWorker.replicas=1 --set queueWorker.maxInflight=1 --set basic_auth=true --set gateway.directFunctions=false --set operator.create=false --set faasnetes.imagePullPolicy=Always --set basicAuthPlugin.replicas=1 --set gateway.replicas=1 --set ingressOperator.create=false --set serviceType=NodePort]
+W0506 13:46:21.446221    7966 loader.go:223] Config not found: ./k3sconfig
+W0506 13:46:21.446536    7966 loader.go:223] Config not found: ./k3sconfig
+W0506 13:46:21.446594    7966 loader.go:223] Config not found: ./k3sconfig
 Error: Kubernetes cluster unreachable: Get "http://localhost:8080/version?timeout=32s": dial tcp [::1]:8080: connect: connection refused
-Error: exit code 1, stderr: W0506 13:34:56.497069    3634 loader.go:223] Config not found: ./k3sconfig
-W0506 13:34:56.497334    3634 loader.go:223] Config not found: ./k3sconfig
-W0506 13:34:56.497373    3634 loader.go:223] Config not found: ./k3sconfig
+Error: exit code 1, stderr: W0506 13:46:21.446221    7966 loader.go:223] Config not found: ./k3sconfig
+W0506 13:46:21.446536    7966 loader.go:223] Config not found: ./k3sconfig
+W0506 13:46:21.446594    7966 loader.go:223] Config not found: ./k3sconfig
 Error: Kubernetes cluster unreachable: Get "http://localhost:8080/version?timeout=32s": dial tcp [::1]:8080: connect: connection refused
 ```
 
