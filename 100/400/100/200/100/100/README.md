@@ -2,7 +2,9 @@
 
 If you have Docker on your computer, then you can use ```k3d``` from Rancher Labs. It installs a lightweight version of Kubernetes called ```k3s``` and runs it within a Docker container, meaning it will work on any computer that has Docker.
 
-## 100 - Install k3d
+## 100 - Install k3d and (optional) k3x
+
+### k3d
 
 See [Install k3d](https://github.com/rancher/k3d)
 
@@ -26,6 +28,28 @@ Check with:
 ```
 $k3d --help
 ```
+
+### k3x
+
+(Optionally) install k3x, 
+See https://github.com/inercia/k3x
+
+
+k3x is a graphical user interface for k3d, making it trivial to have your own local Kubernetes cluster(s).
+
+k3x is perfect for:
+
+- having a fresh Kubernetes cluster in a couple of seconds.
+- trying new deployments before going in production.
+- learning about Kubernetes.
+
+k3x goals are:
+
+- to create/switch-to/destroy Kubernetes clusters easily.
+- to drive the most important operations with global keyboard shortcuts.
+- to reduce the learning curve of using Kubernetes.
+
+### k3s-dind
 
 ***Note***: Here we use k3s-dind (k3s Docker in Docker), which installs k3s inside a Docker container. See [k3s-dind - Headstart](https://github.com/vanHeemstraSystems/k3s-dind-headstart)
 
