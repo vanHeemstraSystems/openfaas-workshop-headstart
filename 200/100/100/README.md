@@ -6,7 +6,7 @@
 
 For MacOS / Linux:
 
-```$curl -SLsf https://dl.get-arkade.dev/ | sudo sh```
+```$ curl -SLsf https://dl.get-arkade.dev/ | sudo sh```
 
 For Windows:
 
