@@ -6,6 +6,18 @@ If you have Docker on your computer, then you can use ```k3d``` from Rancher Lab
 
 See [Install k3d](https://github.com/rancher/k3d) and [k3s-dind - Headstart](https://github.com/vanHeemstraSystems/k3s-dind-headstart)
 
+***Note***: Here we use k3s-dind (k3s Docker in Docker), which installs k3s inside a Docker container.
+
+Directory structure is as follows (excerpt):
+
+```
+[ROOT]
+  - containers
+  - -- k3s-dind
+  - -- -- Dockerfile
+  - -- -- sample.docker-compose.yml
+```
+
 ## 200 - Start a cluster
 
 1. ```k3d cluster create CLUSTER_NAME``` to create a new single-node cluster (= 1 container running k3s + 1 loadbalancer container)
