@@ -4,9 +4,17 @@ If you have Docker on your computer, then you can use ```k3d``` from Rancher Lab
 
 ## 100 - Install k3d
 
-See [Install k3d](https://github.com/rancher/k3d) and [k3s-dind - Headstart](https://github.com/vanHeemstraSystems/k3s-dind-headstart)
+See [Install k3d](https://github.com/rancher/k3d)
 
-***Note***: Here we use k3s-dind (k3s Docker in Docker), which installs k3s inside a Docker container.
+In short:
+
+```
+$ curl -s https://raw.githubusercontent.com/rancher/k3d/main/install.sh | bash
+```
+
+
+
+***Note***: Here we use k3s-dind (k3s Docker in Docker), which installs k3s inside a Docker container. See [k3s-dind - Headstart](https://github.com/vanHeemstraSystems/k3s-dind-headstart)
 
 Directory structure is as follows (excerpt):
 
