@@ -2,7 +2,7 @@
 
 ***WARNING***: Make sure to get the LARGE size of a Linux server when trying the code, as it requires a lot of CPU power.
 
-## 100 - Docker
+## 100 - Docker & docker-compose
 See [README.md](./100/README.md)
 
 ## 200 - OpenFaaS CLI
