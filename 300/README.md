@@ -24,7 +24,15 @@ Your URL will be the IP or DNS entry above on port ```8080```.
 
 ## 200 - Log in
 
+```
+export OPENFAAS_URL="" # Populate as above
 
+# This command retrieves your password
+PASSWORD=$(kubectl get secret -n openfaas basic-auth -o jsonpath="{.data.basic-auth-password}" | base64 --decode; echo)
+
+# This command logs in and saves a file to ~/.openfaas/config.yml
+echo -n $PASSWORD | faas-cli login --username admin --password-stdin
+```
 
 ## 300 - Check that faas-cli list works
 
