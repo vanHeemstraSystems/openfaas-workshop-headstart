@@ -12,7 +12,20 @@ In short:
 $ curl -s https://raw.githubusercontent.com/rancher/k3d/main/install.sh | bash
 ```
 
+You will see:
 
+```
+Preparing to install k3d into /usr/local/bin
+[sudo] password for cloud_user: 
+k3d installed into /usr/local/bin/k3d
+Run 'k3d --help' to see what you can do with it.
+```
+
+Check with:
+
+```
+$k3d --help
+```
 
 ***Note***: Here we use k3s-dind (k3s Docker in Docker), which installs k3s inside a Docker container. See [k3s-dind - Headstart](https://github.com/vanHeemstraSystems/k3s-dind-headstart)
 
