@@ -1,3 +1,6 @@
 # 200 - Deploy OpenFaaS
 
-see https://github.com/openfaas/workshop/blob/master/lab1b.md
+See also https://github.com/openfaas/workshop/blob/master/lab1b.md
+
+## 100 - Install OpenFaaS
+See [README.md](./100/README.md)
