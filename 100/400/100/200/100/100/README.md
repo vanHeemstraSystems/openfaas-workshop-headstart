@@ -26,7 +26,7 @@ Run 'k3d --help' to see what you can do with it.
 Check with:
 
 ```
-$k3d --help
+$ k3d --help
 ```
 
 ### k3x
