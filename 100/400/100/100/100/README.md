@@ -51,10 +51,14 @@ $
 
 This means the kube-apiserver is not running.
 
-Start the kube-apiserver as follows:
+Don't worry, this is because here in the instructions we have ***not yet*** ran ```k3s-dind docker-compose up -d```. Once done and started as follows, kube-apiserver will be running:
 
 ```
-... more
+$ cd containers/k3s-dind/
+$ docker-compose up -d
+$ docker ps
+CONTAINER ID   IMAGE               COMMAND                  CREATED          STATUS         PORTS                                                                                                 NAMES
+7d70ac00d532   k3s-dind_k3s-dind   "/usr/local/bin/star…"   10 seconds ago   Up 7 seconds   0.0.0.0:8080->8080/tcp, :::8080->8080/tcp, 2375-2376/tcp, 0.0.0.0:8443->8443/tcp, :::8443->8443/tcp   k3s
 ```
 
 
