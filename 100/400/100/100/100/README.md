@@ -43,4 +43,18 @@ If you get below error:
 The connection to the server localhost:8080 was refused - did you specify the right host or port?
 ```
 
-Try this: ... more
+Then try this: Check that the api server is actually running and hasn’t crashed:
+```
+$ docker ps | grep kube-apiserver
+$
+```
+
+This means the kube-apiserver is not running.
+
+Start the kube-apiserver as follows:
+
+```
+... more
+```
+
+
