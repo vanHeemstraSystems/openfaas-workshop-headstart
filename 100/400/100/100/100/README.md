@@ -1,5 +1,7 @@
 # 100 - Install latest kubectl on Linux
 
+***Tip***: [kubectl Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
+
 Run following commands:
 
 ```
